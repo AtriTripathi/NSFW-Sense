@@ -33,6 +33,6 @@ If something doesn't works, try to sudo install, check their respective docs, or
 
 ## Future Propects
 
-Develop a Chrome Plugin to monitor this program.
+Develop a Chrome Extension to monitor this program.
 
 ##### Don't forget to Star this Repo, make sure to Fork it, tinker with it, raise your Pull Request and finally come up with better versions of this program. :)
