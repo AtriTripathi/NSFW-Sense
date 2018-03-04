@@ -12,7 +12,7 @@ import requests
 # Enter the Image URL to be searched for NFSW content
 sense_url = 'http://www.abeautyclub.com/wp-content/uploads/2013/01/Beauty-Icons-Pictures-of-Beautiful-Women-03.jpg'
 
-app = ClarifaiApp(api_key='ad566cd963be453589a7610f042683c5')
+app = ClarifaiApp(api_key='<YOUR CLARIFAI API KEY>')
 
 model = app.models.get('nsfw-v1.0')
 image = ClImage(url = sense_url)
@@ -63,7 +63,7 @@ def send_sms():
 	# This is the json payload for the query
 	requestPayload = {
 		"to": "<Enter the mobile number to send message to>",			# eg: 9913426728
-		"countryCode": "<Enter the country code>",						# eg: 91 for India
+		"countryCode": "<Enter the country code>",				# eg: 91 for India
 		"message": "Alert! Your child is viewing explicit content which might not be safe for work."
 	}
 
@@ -82,8 +82,8 @@ def send_sms():
 def make_call():
 
 	# Your Account Sid and Auth Token from twilio.com/user/account
-	account_sid = "AC66765cb9e59399b3636e356346ceb096"
-	auth_token = "5abaaca1210415d0300e7312de0b8168"
+	account_sid = "<YOUR ACCOUNT SID>"
+	auth_token = "<YOUR AUTH TOKEN>"
 	client = Client(account_sid, auth_token)
 	
 	# The mobile number entered below, should be of the format +918602783457, begnning with <+country_code>
